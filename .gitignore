@@ -1,0 +1,7 @@
+DaYi_Defines.xcodeproj/xcuserdata/
+DaYi_Defines.xcworkspace/
+Pods/
+*.swp
+Podfile.lock
+.DS_Store
+DaYi_Defines.xcodeproj/project.xcworkspace/xcuserdata/

@@ -1,0 +1,20 @@
+//
+//  DaYiDefinesPch.pch
+//  DaYi_Defines
+//
+//  Created by Fukai on 2018/10/29.
+//  Copyright © 2018年 FuKai. All rights reserved.
+//
+
+#ifndef DaYiDefinesPch_pch
+#define DaYiDefinesPch_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "DaYiDefines.h"
+#import "UIColor+HexColor.h"
+#import "UIImage+GennerateColor.h"
+#import "UIView+Appearance.h"
+#import "UIButton+UIStyle.h"
+
+#endif /* DaYiDefinesPch_pch */
