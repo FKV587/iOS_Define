@@ -29,10 +29,16 @@
     hub.mode = MBProgressHUDModeIndeterminate;
     hub.animationType = MBProgressHUDAnimationZoom;
     hub.bezelView.style = MBProgressHUDBackgroundStyleSolidColor;
-    hub.label.text = [NSString stringWithFormat:@" %@ ",title];//title;
-    hub.label.textColor = [UIColor whiteColor];
-    hub.detailsLabel.text = subtitle;
-    hub.detailsLabel.textColor = [UIColor whiteColor];
+    
+    if (title) {
+        hub.label.text = [NSString stringWithFormat:@" %@ ",title];//title;
+        hub.label.textColor = [UIColor whiteColor];
+    }
+    
+    if (subtitle) {
+        hub.detailsLabel.text = subtitle;
+        hub.detailsLabel.textColor = [UIColor whiteColor];
+    }
     
     hub.bezelView.color = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.7f];//[UIColor blackColor];
     hub.defaultMotionEffectsEnabled = NO;

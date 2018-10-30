@@ -8,12 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-NS_ASSUME_NONNULL_BEGIN
-
 @interface UIView (Loading)
 
 - (void)showDaYiLoading;
+- (void)showDaYiLoadingTitle:(NSString *)title;
+- (void)showDaYiLoadingSubtitle:(NSString *)subtitle;
+- (void)showDaYiLoadingTitle:(NSString *)title subtitle:(NSString *)subtitle;
+- (void)hiddenLoding;
+- (void)showToast:(NSString *)message;
 
 @end
-
-NS_ASSUME_NONNULL_END
