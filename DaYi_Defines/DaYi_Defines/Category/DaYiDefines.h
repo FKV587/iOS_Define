@@ -27,7 +27,7 @@ typedef void(^DYRefesh)(void);
 
 typedef void(^successHandler)(id data);
 typedef void(^errorHandler)(id data);
-typedef void(^failHandler)(NSError *err);
+typedef void(^failHandler)(id error);
 
 /*
  -----------------------颜色-----------------------

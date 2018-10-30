@@ -16,5 +16,6 @@
 #import "UIImage+GennerateColor.h"
 #import "UIView+Appearance.h"
 #import "UIButton+UIStyle.h"
+#import "UIView+Loading.h"
 
 #endif /* DaYiDefinesPch_pch */

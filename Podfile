@@ -7,5 +7,6 @@ source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
 target 'DaYi_Defines' do
- 
+ pod 'MBProgressHUD', '~> 1.1.0'
+
 end

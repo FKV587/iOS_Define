@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33FEA44ABE88DBAC5E2E8678 /* Pods_DaYi_Defines.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C8C341824D741DDABCA56C7 /* Pods_DaYi_Defines.framework */; };
+		E2419FBB2187FDB300641B7C /* UIView+Loading.m in Sources */ = {isa = PBXBuildFile; fileRef = E2419FBA2187FDB300641B7C /* UIView+Loading.m */; };
 		E2B4CE312186A39D00AF0069 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B4CE302186A39D00AF0069 /* AppDelegate.m */; };
 		E2B4CE342186A39D00AF0069 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B4CE332186A39D00AF0069 /* ViewController.m */; };
 		E2B4CE372186A39D00AF0069 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2B4CE352186A39D00AF0069 /* Main.storyboard */; };
@@ -40,6 +42,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3985C170AC5E858229C382A9 /* Pods-DaYi_Defines.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaYi_Defines.release.xcconfig"; path = "Target Support Files/Pods-DaYi_Defines/Pods-DaYi_Defines.release.xcconfig"; sourceTree = "<group>"; };
+		5C8C341824D741DDABCA56C7 /* Pods_DaYi_Defines.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DaYi_Defines.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE2A06603C7AED3335DB2A09 /* Pods-DaYi_Defines.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaYi_Defines.debug.xcconfig"; path = "Target Support Files/Pods-DaYi_Defines/Pods-DaYi_Defines.debug.xcconfig"; sourceTree = "<group>"; };
+		E2419FB92187FDB300641B7C /* UIView+Loading.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Loading.h"; sourceTree = "<group>"; };
+		E2419FBA2187FDB300641B7C /* UIView+Loading.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Loading.m"; sourceTree = "<group>"; };
 		E2B4CE2C2186A39D00AF0069 /* DaYi_Defines.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DaYi_Defines.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2B4CE2F2186A39D00AF0069 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E2B4CE302186A39D00AF0069 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -75,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33FEA44ABE88DBAC5E2E8678 /* Pods_DaYi_Defines.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +103,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		777AFA6DA529BEB8DFB38496 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5C8C341824D741DDABCA56C7 /* Pods_DaYi_Defines.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA7193FC5FA9E62F386AC23A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DE2A06603C7AED3335DB2A09 /* Pods-DaYi_Defines.debug.xcconfig */,
+				3985C170AC5E858229C382A9 /* Pods-DaYi_Defines.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E2B4CE232186A39C00AF0069 = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +127,8 @@
 				E2B4CE472186A3A900AF0069 /* DaYi_DefinesTests */,
 				E2B4CE522186A3A900AF0069 /* DaYi_DefinesUITests */,
 				E2B4CE2D2186A39D00AF0069 /* Products */,
+				BA7193FC5FA9E62F386AC23A /* Pods */,
+				777AFA6DA529BEB8DFB38496 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -173,6 +200,8 @@
 				E2B4CE682186A51600AF0069 /* UIView+Appearance.h */,
 				E2B4CE672186A51600AF0069 /* UIView+Appearance.m */,
 				E2B4CE632186A4CE00AF0069 /* DaYiDefines.h */,
+				E2419FB92187FDB300641B7C /* UIView+Loading.h */,
+				E2419FBA2187FDB300641B7C /* UIView+Loading.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -184,9 +213,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E2B4CE582186A3A900AF0069 /* Build configuration list for PBXNativeTarget "DaYi_Defines" */;
 			buildPhases = (
+				8D741D9316BBD1C3DFC9466E /* [CP] Check Pods Manifest.lock */,
 				E2B4CE282186A39D00AF0069 /* Sources */,
 				E2B4CE292186A39D00AF0069 /* Frameworks */,
 				E2B4CE2A2186A39D00AF0069 /* Resources */,
+				9AB2F047FB9997FF62E824F4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -302,6 +333,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8D741D9316BBD1C3DFC9466E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DaYi_Defines-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9AB2F047FB9997FF62E824F4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DaYi_Defines/Pods-DaYi_Defines-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DaYi_Defines/Pods-DaYi_Defines-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E2B4CE282186A39D00AF0069 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -315,6 +393,7 @@
 				E2B4CE312186A39D00AF0069 /* AppDelegate.m in Sources */,
 				E2B4CE6A2186A51600AF0069 /* UIView+Appearance.m in Sources */,
 				E2B4CE712186A52C00AF0069 /* UIButton+UIStyle.m in Sources */,
+				E2419FBB2187FDB300641B7C /* UIView+Loading.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,12 +562,14 @@
 		};
 		E2B4CE592186A3A900AF0069 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE2A06603C7AED3335DB2A09 /* Pods-DaYi_Defines.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 99AEJ89ABC;
 				GCC_PREFIX_HEADER = DaYi_Defines/DaYi_Defines/DaYiDefinesPch.pch;
 				INFOPLIST_FILE = DaYi_Defines/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -501,12 +582,14 @@
 		};
 		E2B4CE5A2186A3A900AF0069 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3985C170AC5E858229C382A9 /* Pods-DaYi_Defines.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 99AEJ89ABC;
 				GCC_PREFIX_HEADER = DaYi_Defines/DaYi_Defines/DaYiDefinesPch.pch;
 				INFOPLIST_FILE = DaYi_Defines/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
