@@ -8,5 +8,6 @@ use_frameworks!
 
 target 'DaYi_Defines' do
  pod 'MBProgressHUD', '~> 1.1.0'
+ pod 'SDWebImage'
 
 end
