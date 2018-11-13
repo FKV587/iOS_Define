@@ -19,6 +19,9 @@
     [attString addAttribute:NSForegroundColorAttributeName
                       value:NAVBlue
                       range:NSMakeRange(5, firstStr.length)];
+    [attString addAttribute:NSFontAttributeName
+                      value:[UIFont boldSystemFontOfSize:19.0]
+                      range:NSMakeRange(5, firstStr.length)];
     [attString addAttribute:NSForegroundColorAttributeName
                       value:tableviewLine
                       range:NSMakeRange(5 + firstStr.length, 1)];

@@ -1,6 +1,7 @@
 
 #define Screen_width [UIScreen mainScreen].bounds.size.width
 #define Screen_height [UIScreen mainScreen].bounds.size.height
+#define ApplicationWindow [UIApplication sharedApplication].keyWindow
 //自己的版本号
 #define VersionString [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
 

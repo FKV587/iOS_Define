@@ -21,6 +21,20 @@ NS_ASSUME_NONNULL_BEGIN
                  imageFrame:(CGRect)frame
                    showView:(UIView *)view;
 
+/**
+ 显示大图
+
+ @param images 图片详情
+ */
+- (void)showImageWithImageArray:(NSArray *)images;
+
+/**
+ 显示大图
+ 
+ @param images 图片详情
+ @param selectedIndex 当前展示第一张图
+ */
+- (void)showImageWithImageArray:(NSArray *)images selectedIndex:(int)selectedIndex;
 @end
 
 NS_ASSUME_NONNULL_END

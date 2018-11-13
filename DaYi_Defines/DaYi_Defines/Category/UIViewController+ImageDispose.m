@@ -19,7 +19,22 @@
         [items addObject:item];
     }
     
-    [LBPhotoBrowserManager.defaultManager showImageWithWebItems:items selectedIndex:tag fromImageViewSuperView:view].lowGifMemory = YES;
+    LBPhotoBrowserManager * manager = [LBPhotoBrowserManager.defaultManager showImageWithWebItems:items selectedIndex:tag fromImageViewSuperView:view];
+    manager.lowGifMemory = YES;
+}
+
+- (void)showImageWithImageArray:(NSArray *)images{
+    [self showImageWithImageArray:images selectedIndex:0];
+}
+
+- (void)showImageWithImageArray:(NSArray *)images selectedIndex:(int)selectedIndex{
+    NSMutableArray *items = [[NSMutableArray alloc]init];
+    for (int i = 0 ; i < images.count; i++) {
+        LBPhotoLocalItem *item = [[LBPhotoLocalItem alloc]initWithImage:images[i] frame:CGRectMake(0, 0, Screen_width, Screen_height)];
+        [items addObject:item];
+    }
+    LBPhotoBrowserManager * manager = [LBPhotoBrowserManager.defaultManager showImageWithLocalItems:items selectedIndex:selectedIndex fromImageViewSuperView:self.view];
+    manager.lowGifMemory = YES;
 }
 
 @end
