@@ -23,7 +23,7 @@
 
 + (UIImage *)squareResizingModeStretchImageWithColor:(UIColor *)color
 {
-    CGSize size = CGSizeMake(2, 2);
+    CGSize size = CGSizeMake(3, 3);
     UIGraphicsBeginImageContextWithOptions(size, NO, 0);
     CGContextSetFillColorWithColor(UIGraphicsGetCurrentContext(), color.CGColor);
     CGContextFillRect(UIGraphicsGetCurrentContext(), CGRectMake(0, 0, ceil(size.width), ceil(size.height)));

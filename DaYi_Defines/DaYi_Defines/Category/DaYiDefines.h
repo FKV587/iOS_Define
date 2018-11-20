@@ -9,6 +9,7 @@
 #define NavHeightNew 44
 #define TabbarHeight 49
 #define iphonexHeight (Screen_height == 812.0 ? 24 : 0)
+#define iphonexStatusHeight (Screen_height == 812.0 ? 44 : 20)
 
 #define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
 

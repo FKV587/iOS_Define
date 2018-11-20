@@ -11,6 +11,6 @@
 @interface NSMutableAttributedString (DY)
 
 //待审批 计数颜色修改 字体大小不变
-+ (NSMutableAttributedString *)attributedSetting:(NSString *)firstStr waitStr:(NSString *)waitStr;
++ (NSMutableAttributedString *)attributedSetting:(NSString *)firstStr waitStr:(NSString *)waitStr font:(UIFont *)font;
 
 @end

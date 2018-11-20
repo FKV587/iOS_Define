@@ -10,7 +10,7 @@
 
 @implementation NSMutableAttributedString (DY)
 
-+ (NSMutableAttributedString *)attributedSetting:(NSString *)firstStr waitStr:(NSString *)waitStr
++ (NSMutableAttributedString *)attributedSetting:(NSString *)firstStr waitStr:(NSString *)waitStr font:(UIFont *)font
 {
     NSMutableAttributedString *attString = [[NSMutableAttributedString alloc] initWithString:waitStr];
     [attString addAttribute:NSForegroundColorAttributeName
@@ -20,7 +20,7 @@
                       value:NAVBlue
                       range:NSMakeRange(5, firstStr.length)];
     [attString addAttribute:NSFontAttributeName
-                      value:[UIFont boldSystemFontOfSize:19.0]
+                      value:font
                       range:NSMakeRange(5, firstStr.length)];
     [attString addAttribute:NSForegroundColorAttributeName
                       value:tableviewLine
