@@ -11,7 +11,7 @@
 
 @implementation UIViewController (ImageDispose)
 
-- (void)showGroupImageArray:(NSMutableArray *)array buttonTag:(int)tag imageFrame:(CGRect)frame showView:(UIView *)view{
+- (void)showGroupImageArray:(NSArray <NSString *>*)array buttonTag:(int)tag imageFrame:(CGRect)frame showView:(UIView *)view{
     
     NSMutableArray *items = [[NSMutableArray alloc]init];
     for (int i = 0 ; i < array.count; i++) {
@@ -23,11 +23,15 @@
     manager.lowGifMemory = YES;
 }
 
-- (void)showImageWithImageArray:(NSArray *)images{
+- (void)showGroupImageArray:(NSArray <NSString *>*)array selectedIndex:(int)selectedIndex{
+    [self showGroupImageArray:array buttonTag:selectedIndex imageFrame:CGRectMake(0, 0, Screen_width, Screen_height) showView:self.view];
+}
+
+- (void)showImageWithImageArray:(NSArray <UIImage *>*)images{
     [self showImageWithImageArray:images selectedIndex:0];
 }
 
-- (void)showImageWithImageArray:(NSArray *)images selectedIndex:(int)selectedIndex{
+- (void)showImageWithImageArray:(NSArray <UIImage *>*)images selectedIndex:(int)selectedIndex{
     NSMutableArray *items = [[NSMutableArray alloc]init];
     for (int i = 0 ; i < images.count; i++) {
         LBPhotoLocalItem *item = [[LBPhotoLocalItem alloc]initWithImage:images[i] frame:CGRectMake(0, 0, Screen_width, Screen_height)];

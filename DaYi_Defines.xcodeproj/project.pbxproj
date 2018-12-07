@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2FE522A421AE302200C1EDE6 /* QMUIConfigurationTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FE522A321AE302200C1EDE6 /* QMUIConfigurationTemplate.m */; };
 		33FEA44ABE88DBAC5E2E8678 /* Pods_DaYi_Defines.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C8C341824D741DDABCA56C7 /* Pods_DaYi_Defines.framework */; };
 		E2419FBB2187FDB300641B7C /* UIView+Loading.m in Sources */ = {isa = PBXBuildFile; fileRef = E2419FBA2187FDB300641B7C /* UIView+Loading.m */; };
 		E258D7522192C83400AAE215 /* UIViewController+ImageDispose.m in Sources */ = {isa = PBXBuildFile; fileRef = E258D7512192C83400AAE215 /* UIViewController+ImageDispose.m */; };
@@ -53,6 +54,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2FE522A221AE302200C1EDE6 /* QMUIConfigurationTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMUIConfigurationTemplate.h; sourceTree = "<group>"; };
+		2FE522A321AE302200C1EDE6 /* QMUIConfigurationTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMUIConfigurationTemplate.m; sourceTree = "<group>"; };
 		3985C170AC5E858229C382A9 /* Pods-DaYi_Defines.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaYi_Defines.release.xcconfig"; path = "Target Support Files/Pods-DaYi_Defines/Pods-DaYi_Defines.release.xcconfig"; sourceTree = "<group>"; };
 		5C8C341824D741DDABCA56C7 /* Pods_DaYi_Defines.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DaYi_Defines.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE2A06603C7AED3335DB2A09 /* Pods-DaYi_Defines.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaYi_Defines.debug.xcconfig"; path = "Target Support Files/Pods-DaYi_Defines/Pods-DaYi_Defines.debug.xcconfig"; sourceTree = "<group>"; };
@@ -135,6 +138,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2FE522A121AE302200C1EDE6 /* QMUIConfigurationTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				2FE522A221AE302200C1EDE6 /* QMUIConfigurationTemplate.h */,
+				2FE522A321AE302200C1EDE6 /* QMUIConfigurationTemplate.m */,
+			);
+			path = QMUIConfigurationTemplate;
+			sourceTree = "<group>";
+		};
 		777AFA6DA529BEB8DFB38496 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -238,6 +250,7 @@
 		E2B4CE612186A46E00AF0069 /* DaYi_Defines */ = {
 			isa = PBXGroup;
 			children = (
+				2FE522A121AE302200C1EDE6 /* QMUIConfigurationTemplate */,
 				E258D7532192DD7400AAE215 /* LBPhotoBrowser */,
 				E2B4CE642186A4D900AF0069 /* Category */,
 				E2B4CE742186A59400AF0069 /* DaYiDefinesPch.pch */,
@@ -428,6 +441,7 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-DaYi_Defines/Pods-DaYi_Defines-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/QMUIKit/QMUIKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -435,6 +449,7 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QMUIKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -451,6 +466,7 @@
 			files = (
 				E258D76F2192DD7500AAE215 /* UIImage+LBDecoder.m in Sources */,
 				E258D7522192C83400AAE215 /* UIViewController+ImageDispose.m in Sources */,
+				2FE522A421AE302200C1EDE6 /* QMUIConfigurationTemplate.m in Sources */,
 				E2B4CE342186A39D00AF0069 /* ViewController.m in Sources */,
 				E258D76C2192DD7500AAE215 /* LBPhotoBrowserView.m in Sources */,
 				E2B4CE692186A51600AF0069 /* UIColor+HexColor.m in Sources */,

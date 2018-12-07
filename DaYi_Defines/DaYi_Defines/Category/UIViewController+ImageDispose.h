@@ -11,12 +11,20 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface UIViewController (ImageDispose)
+
+/**
+ 显示大图
+
+ @param array string
+ @param selectedIndex 选中
+ */
+- (void)showGroupImageArray:(NSArray <NSString *> *)array selectedIndex:(int)selectedIndex;
 /**
  显示大图
  
  @param array shuzu
  */
-- (void)showGroupImageArray:(NSMutableArray *)array
+- (void)showGroupImageArray:(NSArray <NSString *> *)array
                   buttonTag:(int)tag
                  imageFrame:(CGRect)frame
                    showView:(UIView *)view;
@@ -26,7 +34,7 @@ NS_ASSUME_NONNULL_BEGIN
 
  @param images 图片详情
  */
-- (void)showImageWithImageArray:(NSArray *)images;
+- (void)showImageWithImageArray:(NSArray <UIImage *>*)images;
 
 /**
  显示大图
@@ -34,7 +42,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param images 图片详情
  @param selectedIndex 当前展示第一张图
  */
-- (void)showImageWithImageArray:(NSArray *)images selectedIndex:(int)selectedIndex;
+- (void)showImageWithImageArray:(NSArray <UIImage *>*)images selectedIndex:(int)selectedIndex;
 @end
 
 NS_ASSUME_NONNULL_END

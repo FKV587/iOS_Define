@@ -26,6 +26,7 @@
  */
 //上一级刷新数据
 typedef void(^DYRefesh)(void);
+typedef void(^DaYiBlock)(id data);
 
 typedef void(^successHandler)(id data);
 typedef void(^errorHandler)(id data);
@@ -43,8 +44,19 @@ typedef void(^failHandler)(id error);
 #define tableviewLine [UIColor colorWithHex:0xdddddd]
 #define textBlackColor [UIColor colorWithHex:0x333333]
 
+#define NAVBlue_Swift 0xe9ef5
+#define coustomWhiteColor_Swift 0xffffff
+#define textDark_Swift 0x999999
+#define tableviewBackColor_Swift 0xf5f5f9
+#define tableviewLine_Swift 0xdddddd
+#define textBlackColor_Swift 0x333333
+
 /*
  -----------------------默认图片-----------------------
  */
 
 #define DEFAULTIMAGE [UIImage imageNamed:@"default_noimg"]
+
+#define SUCCESS @"DaYi_success"
+#define FAIL @"DaYi_fail"
+#define AUTHORIZATION @"DaYi_authorization"

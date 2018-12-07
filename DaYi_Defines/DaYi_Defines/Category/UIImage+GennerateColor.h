@@ -14,7 +14,7 @@
 + (UIImage *)squareResizingModeStretchImageWithColor:(UIColor *)color;
 
 //渐变色从上到下
-+ (UIImage *)underLineSquarImageWithBGColor:(UIColor *)color1 lineColor:(UIColor *)color2 andSize:(CGSize)size;
++ (UIImage *)underLineSquarImageWithBGColor:(UIColor *)color lineColor:(UIColor *)color1 andSize:(CGSize)size;
 //渐变色从左上到右下
 + (UIImage *)underLineSquarImageWithLeftUpColor:(UIColor *)color rightDownColor:(UIColor *)color1 andSize:(CGSize)size;
 //渐变色从左到右

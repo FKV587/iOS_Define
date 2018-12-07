@@ -14,6 +14,8 @@ typedef enum : NSUInteger {
     UIButtonUIStyle_ONE,
     UIButtonUIStyle_TWO,
     UIButtonUIStyle_THREE,
+    UIButtonUIStyle_FOUR,
+    UIButtonUIStyle_TAGONE,
 } UIButtonUIStyle;
 
 @interface UIButton (UIStyle)

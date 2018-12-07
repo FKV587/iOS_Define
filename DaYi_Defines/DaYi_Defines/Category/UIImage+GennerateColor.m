@@ -38,19 +38,24 @@
     return image;
 }
 
-+ (UIImage *)underLineSquarImageWithBGColor:(UIColor *)color1 lineColor:(UIColor *)color2 andSize:(CGSize)size
++ (UIImage *)underLineSquarImageWithBGColor:(UIColor *)color lineColor:(UIColor *)color1 andSize:(CGSize)size
 {
-    UIGraphicsBeginImageContextWithOptions(size, NO, 0);
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    CGContextSetFillColorWithColor(UIGraphicsGetCurrentContext(), color1.CGColor);
-    CGContextFillRect(context, CGRectMake(0, 0, ceil(size.width), ceil(size.height)));
+    CIFilter *ciFilter = [CIFilter filterWithName:@"CILinearGradient"];
+    CIVector *vector0 = [CIVector vectorWithX:0 Y:size.height];
+    CIVector *vector1 = [CIVector vectorWithX:size.width Y:0];
+    [ciFilter setValue:vector0 forKey:@"inputPoint0"];
+    [ciFilter setValue:[CIColor colorWithCGColor:color.CGColor] forKey:@"inputColor0"];
+    [ciFilter setValue:vector1 forKey:@"inputPoint1"];
+    [ciFilter setValue:[CIColor colorWithCGColor:color1.CGColor] forKey:@"inputColor1"];
     
-    CGContextSetFillColorWithColor(context, color2.CGColor);
-    CGContextFillRect(context, CGRectMake(0, size.height - 4, size.width, 4));
+    CIImage *ciImage = ciFilter.outputImage;
+    CIContext *con = [CIContext contextWithOptions:nil];
+    CGImageRef resultCGImage = [con createCGImage:ciImage
+                                         fromRect:CGRectMake(0, 0, size.width, size.height)];
+    UIImage *resultUIImage = [UIImage imageWithCGImage:resultCGImage];
+    CGImageRelease(resultCGImage);
     
-    UIImage * image  = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    return image;
+    return resultUIImage;
 }
 
 + (UIImage *)underLineSquarImageWithLeftColor:(UIColor *)color rightColor:(UIColor *)color1 andSize:(CGSize)size
