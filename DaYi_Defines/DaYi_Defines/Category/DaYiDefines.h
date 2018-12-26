@@ -35,21 +35,9 @@ typedef void(^failHandler)(id error);
 /*
  -----------------------颜色-----------------------
  */
-//纯白色
-#define whiteColorAlpha @"ffffff"
-#define coustomWhiteColor [UIColor colorWithHex:0xffffff]
-#define textDark [UIColor colorWithHex:0x999999]
-#define NAVBlue [UIColor colorWithHex:0xe9ef5]
-#define tableviewBackColor [UIColor colorWithHex:0xf5f5f9]
-#define tableviewLine [UIColor colorWithHex:0xdddddd]
-#define textBlackColor [UIColor colorWithHex:0x333333]
-
-#define NAVBlue_Swift 0xe9ef5
-#define coustomWhiteColor_Swift 0xffffff
-#define textDark_Swift 0x999999
-#define tableviewBackColor_Swift 0xf5f5f9
-#define tableviewLine_Swift 0xdddddd
-#define textBlackColor_Swift 0x333333
+#define UIColorOrange               [UIColor colorWithHex:0xff8601]
+#define UIColorBlueDarken           [UIColor colorWithHex:0x4782e9]
+#define UIColorBlueLighten          [UIColor colorWithHex:0x2e9ef5]
 
 /*
  -----------------------默认图片-----------------------

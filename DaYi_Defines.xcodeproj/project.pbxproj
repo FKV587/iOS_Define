@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F68ED9E21D34BE300BC9F3E /* UIViewController+UINavigationStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F68ED9D21D34BE300BC9F3E /* UIViewController+UINavigationStyle.m */; };
 		2FE522A421AE302200C1EDE6 /* QMUIConfigurationTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FE522A321AE302200C1EDE6 /* QMUIConfigurationTemplate.m */; };
 		33FEA44ABE88DBAC5E2E8678 /* Pods_DaYi_Defines.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C8C341824D741DDABCA56C7 /* Pods_DaYi_Defines.framework */; };
 		E2419FBB2187FDB300641B7C /* UIView+Loading.m in Sources */ = {isa = PBXBuildFile; fileRef = E2419FBA2187FDB300641B7C /* UIView+Loading.m */; };
@@ -54,6 +55,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F68ED9C21D34BE300BC9F3E /* UIViewController+UINavigationStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+UINavigationStyle.h"; sourceTree = "<group>"; };
+		2F68ED9D21D34BE300BC9F3E /* UIViewController+UINavigationStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+UINavigationStyle.m"; sourceTree = "<group>"; };
 		2FE522A221AE302200C1EDE6 /* QMUIConfigurationTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMUIConfigurationTemplate.h; sourceTree = "<group>"; };
 		2FE522A321AE302200C1EDE6 /* QMUIConfigurationTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMUIConfigurationTemplate.m; sourceTree = "<group>"; };
 		3985C170AC5E858229C382A9 /* Pods-DaYi_Defines.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaYi_Defines.release.xcconfig"; path = "Target Support Files/Pods-DaYi_Defines/Pods-DaYi_Defines.release.xcconfig"; sourceTree = "<group>"; };
@@ -262,6 +265,8 @@
 			isa = PBXGroup;
 			children = (
 				E2B4CE6E2186A52C00AF0069 /* NSMutableAttributedString+DY.h */,
+				2F68ED9C21D34BE300BC9F3E /* UIViewController+UINavigationStyle.h */,
+				2F68ED9D21D34BE300BC9F3E /* UIViewController+UINavigationStyle.m */,
 				E2B4CE702186A52C00AF0069 /* NSMutableAttributedString+DY.m */,
 				E2B4CE6F2186A52C00AF0069 /* UIButton+UIStyle.h */,
 				E2B4CE6B2186A52C00AF0069 /* UIButton+UIStyle.m */,
@@ -476,6 +481,7 @@
 				E2B4CE722186A52C00AF0069 /* UIImage+GennerateColor.m in Sources */,
 				E2B4CE312186A39D00AF0069 /* AppDelegate.m in Sources */,
 				E258D7672192DD7500AAE215 /* LBLoadingView.m in Sources */,
+				2F68ED9E21D34BE300BC9F3E /* UIViewController+UINavigationStyle.m in Sources */,
 				E258D76B2192DD7500AAE215 /* LBPhotoBrowserManager.m in Sources */,
 				E2B4CE6A2186A51600AF0069 /* UIView+Appearance.m in Sources */,
 				E258D76E2192DD7500AAE215 /* LBZoomScrollView.m in Sources */,

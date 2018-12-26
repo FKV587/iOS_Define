@@ -8,6 +8,7 @@
 
 #import "UIImage+GennerateColor.h"
 
+
 @implementation UIImage (GennerateColor)
 
 + (UIImage *)squareImageWithColor:(UIColor *)color andSize:(CGSize)size
@@ -107,5 +108,20 @@
     UIEdgeInsets insets = UIEdgeInsetsMake(top, left, bottom, right);
     return [[UIImage imageNamed:@"btn.9"] resizableImageWithCapInsets:insets resizingMode:UIImageResizingModeStretch];
 }
+
++ (UIImage *)navigationBarBackgroundImageWithThemeColor:(UIColor *)color {
+    CGSize size = CGSizeMake(4, 88);
+    color = color ? color : UIColorClear;
+    
+    UIImage *resultImage = [UIImage qmui_imageWithSize:size opaque:YES scale:0 actions:^(CGContextRef contextRef) {
+        CGColorSpaceRef spaceRef = CGColorSpaceCreateDeviceRGB();
+        CGGradientRef gradient = CGGradientCreateWithColors(spaceRef, (CFArrayRef)@[(id)color.CGColor, (id)[color qmui_colorWithAlphaAddedToWhite:.86].CGColor], NULL);
+        CGContextDrawLinearGradient(contextRef, gradient, CGPointZero, CGPointMake(0, size.height), kCGGradientDrawsBeforeStartLocation);
+        CGColorSpaceRelease(spaceRef);
+        CGGradientRelease(gradient);
+    }];
+    return [resultImage resizableImageWithCapInsets:UIEdgeInsetsMake(0, 1, 0, 1) resizingMode:UIImageResizingModeStretch];
+}
+
 
 @end

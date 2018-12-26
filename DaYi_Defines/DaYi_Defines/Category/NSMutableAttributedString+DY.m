@@ -14,16 +14,16 @@
 {
     NSMutableAttributedString *attString = [[NSMutableAttributedString alloc] initWithString:waitStr];
     [attString addAttribute:NSForegroundColorAttributeName
-                      value:tableviewLine
+                      value:UIColorSeparator
                       range:NSMakeRange(4, 1)];
     [attString addAttribute:NSForegroundColorAttributeName
-                      value:NAVBlue
+                      value:UIColorBlue
                       range:NSMakeRange(5, firstStr.length)];
     [attString addAttribute:NSFontAttributeName
                       value:font
                       range:NSMakeRange(5, firstStr.length)];
     [attString addAttribute:NSForegroundColorAttributeName
-                      value:tableviewLine
+                      value:UIColorSeparator
                       range:NSMakeRange(5 + firstStr.length, 1)];
     return attString;
 }

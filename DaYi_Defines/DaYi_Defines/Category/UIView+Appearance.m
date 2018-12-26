@@ -14,7 +14,7 @@
 - (void)roundBorder
 {
     [self roundCorner:5.0];
-    [self border:tableviewLine width:0.5];
+    [self border:UIColorSeparator width:0.5];
 }
 
 - (void)roundCorner:(CGFloat)raduis

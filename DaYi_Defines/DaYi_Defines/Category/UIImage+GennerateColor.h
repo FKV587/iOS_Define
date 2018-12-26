@@ -21,4 +21,7 @@
 + (UIImage *)underLineSquarImageWithLeftColor:(UIColor *)color rightColor:(UIColor *)color1 andSize:(CGSize)size;
 
 + (UIImage *)shadow_normal_image;
+//navigationBarBackgroundImage
++ (UIImage *)navigationBarBackgroundImageWithThemeColor:(UIColor *)color;
+
 @end
