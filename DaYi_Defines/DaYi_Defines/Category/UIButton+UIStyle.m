@@ -11,7 +11,7 @@
 
 @implementation UIButton (UIStyle)
 
-static CGFloat BIGHEIGHT = 42.0;
+static CGFloat BIGHEIGHT = 50.0;
 
 static char * UISTYLETYPE = "UISTYLETYPE";
 
@@ -40,9 +40,9 @@ static char * UISTYLETYPE = "UISTYLETYPE";
     [self setTitleColor:[UIColor colorWithHex:0xffffff alpha:1] forState:UIControlStateNormal];
     [self setTitleColor:[UIColor colorWithHex:0xffffff alpha:0.6] forState:UIControlStateHighlighted];
     [self setTitleColor:[UIColor colorWithHex:0xffffff alpha:0.3] forState:UIControlStateDisabled];
-    [self setBackgroundImage:[UIImage squareImageWithColor:[UIColor colorWithHex:0x2e9ef5] andSize:CGSizeMake(Screen_width, BIGHEIGHT)] forState:UIControlStateNormal];
-    [self setBackgroundImage:[UIImage squareImageWithColor:[UIColor colorWithHex:0x298edc] andSize:CGSizeMake(Screen_width, BIGHEIGHT)] forState:UIControlStateHighlighted];
-    [self setBackgroundImage:[UIImage squareImageWithColor:[UIColor colorWithHex:0x2e9ef5 alpha:0.6] andSize:CGSizeMake(Screen_width, BIGHEIGHT)] forState:UIControlStateDisabled];
+    [self setBackgroundImage:[UIImage squareResizingModeStretchImageWithColor:[UIColor colorWithHex:0x2e9ef5]] forState:UIControlStateNormal];
+    [self setBackgroundImage:[UIImage squareResizingModeStretchImageWithColor:[UIColor colorWithHex:0x298edc]] forState:UIControlStateHighlighted];
+    [self setBackgroundImage:[UIImage squareResizingModeStretchImageWithColor:[UIColor colorWithHex:0x2e9ef5 alpha:0.6]] forState:UIControlStateDisabled];
     self.contentEdgeInsets = UIEdgeInsetsMake(9, 9, 9, 9);
 }
 
@@ -52,9 +52,9 @@ static char * UISTYLETYPE = "UISTYLETYPE";
     [self setTitleColor:[UIColor colorWithHex:0x000000 alpha:1] forState:UIControlStateNormal];
     [self setTitleColor:[UIColor colorWithHex:0x000000 alpha:0.6] forState:UIControlStateHighlighted];
     [self setTitleColor:[UIColor colorWithHex:0x000000 alpha:0.3] forState:UIControlStateDisabled];
-    [self setBackgroundImage:[UIImage squareImageWithColor:[UIColor colorWithHex:0xF8F8F8] andSize:CGSizeMake(Screen_width, BIGHEIGHT)] forState:UIControlStateNormal];
-    [self setBackgroundImage:[UIImage squareImageWithColor:[UIColor colorWithHex:0xDFDFDF alpha:0.6] andSize:CGSizeMake(Screen_width, BIGHEIGHT)] forState:UIControlStateHighlighted];
-    [self setBackgroundImage:[UIImage squareImageWithColor:[UIColor colorWithHex:0xF8F8F8 alpha:0.3] andSize:CGSizeMake(Screen_width, BIGHEIGHT)] forState:UIControlStateDisabled];
+    [self setBackgroundImage:[UIImage squareResizingModeStretchImageWithColor:[UIColor colorWithHex:0xF8F8F8]] forState:UIControlStateNormal];
+    [self setBackgroundImage:[UIImage squareResizingModeStretchImageWithColor:[UIColor colorWithHex:0xDFDFDF alpha:0.6]] forState:UIControlStateHighlighted];
+    [self setBackgroundImage:[UIImage squareResizingModeStretchImageWithColor:[UIColor colorWithHex:0xF8F8F8 alpha:0.3]] forState:UIControlStateDisabled];
     self.contentEdgeInsets = UIEdgeInsetsMake(9, 9, 9, 9);
 }
 

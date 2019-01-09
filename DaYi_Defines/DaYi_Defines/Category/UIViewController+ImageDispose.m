@@ -24,7 +24,7 @@
 }
 
 - (void)showGroupImageArray:(NSArray <NSString *>*)array selectedIndex:(int)selectedIndex{
-    [self showGroupImageArray:array buttonTag:selectedIndex imageFrame:CGRectMake(0, 0, Screen_width, Screen_height) showView:self.view];
+    [self showGroupImageArray:array buttonTag:selectedIndex imageFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT) showView:self.view];
 }
 
 - (void)showImageWithImageArray:(NSArray <UIImage *>*)images{
@@ -34,7 +34,7 @@
 - (void)showImageWithImageArray:(NSArray <UIImage *>*)images selectedIndex:(int)selectedIndex{
     NSMutableArray *items = [[NSMutableArray alloc]init];
     for (int i = 0 ; i < images.count; i++) {
-        LBPhotoLocalItem *item = [[LBPhotoLocalItem alloc]initWithImage:images[i] frame:CGRectMake(0, 0, Screen_width, Screen_height)];
+        LBPhotoLocalItem *item = [[LBPhotoLocalItem alloc]initWithImage:images[i] frame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
         [items addObject:item];
     }
     LBPhotoBrowserManager * manager = [LBPhotoBrowserManager.defaultManager showImageWithLocalItems:items selectedIndex:selectedIndex fromImageViewSuperView:self.view];

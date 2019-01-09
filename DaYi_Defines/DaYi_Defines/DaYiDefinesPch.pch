@@ -18,5 +18,6 @@
 #import "UIButton+UIStyle.h"
 #import "UIView+Loading.h"
 #import <QMUIKit/QMUIKit.h>
+#import "UIViewController+UINavigationStyle.h"
 
 #endif /* DaYiDefinesPch_pch */

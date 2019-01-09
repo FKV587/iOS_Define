@@ -24,4 +24,13 @@
 //navigationBarBackgroundImage
 + (UIImage *)navigationBarBackgroundImageWithThemeColor:(UIColor *)color;
 
+/**
+ 压缩图片
+*/
++ (UIImage *)scaleImage:(UIImage *)aImage;
+
+/**
+ 图片旋转
+ */
++ (UIImage *)fixOrientation:(UIImage *)aImage;
 @end

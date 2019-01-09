@@ -1,17 +1,9 @@
 
-#define Screen_width [UIScreen mainScreen].bounds.size.width
-#define Screen_height [UIScreen mainScreen].bounds.size.height
+#import <Foundation/Foundation.h>
+
 #define ApplicationWindow [UIApplication sharedApplication].keyWindow
 //自己的版本号
 #define VersionString [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
-
-#define NavHeight (Screen_height == 812.0 ? 88 : 64)
-#define NavHeightNew 44
-#define TabbarHeight 49
-#define iphonexHeight (Screen_height == 812.0 ? 24 : 0)
-#define iphonexStatusHeight (Screen_height == 812.0 ? 44 : 20)
-
-#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
 
 #ifndef weakify
 #define weakify(object) try{} @finally{} {} __weak __typeof__(object) weak##_##object = object;
@@ -26,25 +18,54 @@
  */
 //上一级刷新数据
 typedef void(^DYRefesh)(void);
-typedef void(^DaYiBlock)(id data);
+typedef void(^DaYiBlock)(void);
+typedef void(^DaYiBOOLBlock)(BOOL status);
+typedef void(^DaYiBlock1)(id data);
 
 typedef void(^successHandler)(id data);
 typedef void(^errorHandler)(id data);
 typedef void(^failHandler)(id error);
 
+
+#define DYACCOUNTMAXLENGTH 11
+#define MaxPickerSelectedImageCount 6
+#define DYMargin UIEdgeInsetsMake(10, 15, 10, 15)
+#define DYLoginLeftMargin 20.0
+#define DYTableViewSectionHeight 10.0
+
+#define DYMinPassWordLength 6
+#define DYMaxPassWordLength 18
 /*
  -----------------------颜色-----------------------
  */
+
 #define UIColorOrange               [UIColor colorWithHex:0xff8601]
 #define UIColorBlueDarken           [UIColor colorWithHex:0x4782e9]
 #define UIColorBlueLighten          [UIColor colorWithHex:0x2e9ef5]
+#define UIColorBlackDarken          [UIColor colorWithHex:0x34393f]
+#define UIColorRedDarken            [UIColor colorWithHex:0xff3b30]
 
 /*
  -----------------------默认图片-----------------------
  */
 
 #define DEFAULTIMAGE [UIImage imageNamed:@"default_noimg"]
+#define INLETTYPE @"C"
+#define DYSCNNINGCODE @"M10001"
+
+#define NETWORKDEFULTERROR @"网络请求失败,请稍后再试"
 
 #define SUCCESS @"DaYi_success"
 #define FAIL @"DaYi_fail"
 #define AUTHORIZATION @"DaYi_authorization"
+
+
+typedef enum : int {
+    ROLEIDTYPE_WORKER = 1,   //工人
+    ROLEIDTYPE_TEAMLEADER,   //班组长
+    ROLEIDTYPE_SERVICESCOMPANY,   //劳务公司
+    ROLEIDTYPE_CONSTRUCTIONUNIT_TOTALPACKAGE,   //施工单位-总包
+    ROLEIDTYPE_CONSTRUCTIONUNIT_DEVELOPER,   //建设单位-开发商
+    ROLEIDTYPE_ADMINISTRATIVEUNIT,   //行政单位
+} ROLEIDTYPE;
+

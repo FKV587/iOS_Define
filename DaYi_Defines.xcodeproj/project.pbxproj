@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		2F68ED9E21D34BE300BC9F3E /* UIViewController+UINavigationStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F68ED9D21D34BE300BC9F3E /* UIViewController+UINavigationStyle.m */; };
+		2F6F68CE21D4D31500C0192F /* CJMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F6F68C821D4D30D00C0192F /* CJMD5.m */; };
+		2F6F68CF21D4D31500C0192F /* NSString+FolatLastValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F6F68CA21D4D31000C0192F /* NSString+FolatLastValue.m */; };
+		2F6F68D021D4D31500C0192F /* NSString+DaYi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F6F68CB21D4D31100C0192F /* NSString+DaYi.m */; };
+		2FE066D221D63DAC00B9F158 /* UIViewController+DaYi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FE066D121D63DAC00B9F158 /* UIViewController+DaYi.m */; };
+		2FE066DD21D702AC00B9F158 /* UIViewController+FKImagePickerSelect.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FE066DC21D702AC00B9F158 /* UIViewController+FKImagePickerSelect.m */; };
+		2FE066F821D74C4300B9F158 /* DYSavePHPhotoLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FE066F721D74C4300B9F158 /* DYSavePHPhotoLibrary.m */; };
 		2FE522A421AE302200C1EDE6 /* QMUIConfigurationTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FE522A321AE302200C1EDE6 /* QMUIConfigurationTemplate.m */; };
 		33FEA44ABE88DBAC5E2E8678 /* Pods_DaYi_Defines.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C8C341824D741DDABCA56C7 /* Pods_DaYi_Defines.framework */; };
 		E2419FBB2187FDB300641B7C /* UIView+Loading.m in Sources */ = {isa = PBXBuildFile; fileRef = E2419FBA2187FDB300641B7C /* UIView+Loading.m */; };
@@ -57,6 +63,18 @@
 /* Begin PBXFileReference section */
 		2F68ED9C21D34BE300BC9F3E /* UIViewController+UINavigationStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+UINavigationStyle.h"; sourceTree = "<group>"; };
 		2F68ED9D21D34BE300BC9F3E /* UIViewController+UINavigationStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+UINavigationStyle.m"; sourceTree = "<group>"; };
+		2F6F68C821D4D30D00C0192F /* CJMD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMD5.m; sourceTree = "<group>"; };
+		2F6F68C921D4D30F00C0192F /* NSString+DaYi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DaYi.h"; sourceTree = "<group>"; };
+		2F6F68CA21D4D31000C0192F /* NSString+FolatLastValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FolatLastValue.m"; sourceTree = "<group>"; };
+		2F6F68CB21D4D31100C0192F /* NSString+DaYi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DaYi.m"; sourceTree = "<group>"; };
+		2F6F68CC21D4D31200C0192F /* NSString+FolatLastValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FolatLastValue.h"; sourceTree = "<group>"; };
+		2F6F68CD21D4D31400C0192F /* CJMD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMD5.h; sourceTree = "<group>"; };
+		2FE066D021D63DAC00B9F158 /* UIViewController+DaYi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+DaYi.h"; sourceTree = "<group>"; };
+		2FE066D121D63DAC00B9F158 /* UIViewController+DaYi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+DaYi.m"; sourceTree = "<group>"; };
+		2FE066DB21D702AC00B9F158 /* UIViewController+FKImagePickerSelect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+FKImagePickerSelect.h"; sourceTree = "<group>"; };
+		2FE066DC21D702AC00B9F158 /* UIViewController+FKImagePickerSelect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+FKImagePickerSelect.m"; sourceTree = "<group>"; };
+		2FE066F621D74C4300B9F158 /* DYSavePHPhotoLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYSavePHPhotoLibrary.h; sourceTree = "<group>"; };
+		2FE066F721D74C4300B9F158 /* DYSavePHPhotoLibrary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYSavePHPhotoLibrary.m; sourceTree = "<group>"; };
 		2FE522A221AE302200C1EDE6 /* QMUIConfigurationTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMUIConfigurationTemplate.h; sourceTree = "<group>"; };
 		2FE522A321AE302200C1EDE6 /* QMUIConfigurationTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMUIConfigurationTemplate.m; sourceTree = "<group>"; };
 		3985C170AC5E858229C382A9 /* Pods-DaYi_Defines.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaYi_Defines.release.xcconfig"; path = "Target Support Files/Pods-DaYi_Defines/Pods-DaYi_Defines.release.xcconfig"; sourceTree = "<group>"; };
@@ -264,10 +282,16 @@
 		E2B4CE642186A4D900AF0069 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				2F6F68CD21D4D31400C0192F /* CJMD5.h */,
+				2F6F68C821D4D30D00C0192F /* CJMD5.m */,
+				2F6F68C921D4D30F00C0192F /* NSString+DaYi.h */,
+				2F6F68CB21D4D31100C0192F /* NSString+DaYi.m */,
+				2F6F68CC21D4D31200C0192F /* NSString+FolatLastValue.h */,
+				2F6F68CA21D4D31000C0192F /* NSString+FolatLastValue.m */,
 				E2B4CE6E2186A52C00AF0069 /* NSMutableAttributedString+DY.h */,
+				E2B4CE702186A52C00AF0069 /* NSMutableAttributedString+DY.m */,
 				2F68ED9C21D34BE300BC9F3E /* UIViewController+UINavigationStyle.h */,
 				2F68ED9D21D34BE300BC9F3E /* UIViewController+UINavigationStyle.m */,
-				E2B4CE702186A52C00AF0069 /* NSMutableAttributedString+DY.m */,
 				E2B4CE6F2186A52C00AF0069 /* UIButton+UIStyle.h */,
 				E2B4CE6B2186A52C00AF0069 /* UIButton+UIStyle.m */,
 				E2B4CE6C2186A52C00AF0069 /* UIImage+GennerateColor.h */,
@@ -281,6 +305,12 @@
 				E2419FBA2187FDB300641B7C /* UIView+Loading.m */,
 				E258D7502192C83400AAE215 /* UIViewController+ImageDispose.h */,
 				E258D7512192C83400AAE215 /* UIViewController+ImageDispose.m */,
+				2FE066D021D63DAC00B9F158 /* UIViewController+DaYi.h */,
+				2FE066D121D63DAC00B9F158 /* UIViewController+DaYi.m */,
+				2FE066DB21D702AC00B9F158 /* UIViewController+FKImagePickerSelect.h */,
+				2FE066DC21D702AC00B9F158 /* UIViewController+FKImagePickerSelect.m */,
+				2FE066F621D74C4300B9F158 /* DYSavePHPhotoLibrary.h */,
+				2FE066F721D74C4300B9F158 /* DYSavePHPhotoLibrary.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -469,17 +499,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FE066F821D74C4300B9F158 /* DYSavePHPhotoLibrary.m in Sources */,
 				E258D76F2192DD7500AAE215 /* UIImage+LBDecoder.m in Sources */,
 				E258D7522192C83400AAE215 /* UIViewController+ImageDispose.m in Sources */,
+				2F6F68CF21D4D31500C0192F /* NSString+FolatLastValue.m in Sources */,
 				2FE522A421AE302200C1EDE6 /* QMUIConfigurationTemplate.m in Sources */,
+				2F6F68D021D4D31500C0192F /* NSString+DaYi.m in Sources */,
 				E2B4CE342186A39D00AF0069 /* ViewController.m in Sources */,
 				E258D76C2192DD7500AAE215 /* LBPhotoBrowserView.m in Sources */,
 				E2B4CE692186A51600AF0069 /* UIColor+HexColor.m in Sources */,
 				E258D7682192DD7500AAE215 /* LBOptionView.m in Sources */,
 				E2B4CE3F2186A3A900AF0069 /* main.m in Sources */,
 				E2B4CE732186A52C00AF0069 /* NSMutableAttributedString+DY.m in Sources */,
+				2F6F68CE21D4D31500C0192F /* CJMD5.m in Sources */,
 				E2B4CE722186A52C00AF0069 /* UIImage+GennerateColor.m in Sources */,
 				E2B4CE312186A39D00AF0069 /* AppDelegate.m in Sources */,
+				2FE066D221D63DAC00B9F158 /* UIViewController+DaYi.m in Sources */,
 				E258D7672192DD7500AAE215 /* LBLoadingView.m in Sources */,
 				2F68ED9E21D34BE300BC9F3E /* UIViewController+UINavigationStyle.m in Sources */,
 				E258D76B2192DD7500AAE215 /* LBPhotoBrowserManager.m in Sources */,
@@ -488,6 +523,7 @@
 				E258D76D2192DD7500AAE215 /* LBTapDetectingImageView.m in Sources */,
 				E258D7702192DD7500AAE215 /* UIView+LBFrame.m in Sources */,
 				E258D76A2192DD7500AAE215 /* LBPhotoBrowserConst.m in Sources */,
+				2FE066DD21D702AC00B9F158 /* UIViewController+FKImagePickerSelect.m in Sources */,
 				E2B4CE712186A52C00AF0069 /* UIButton+UIStyle.m in Sources */,
 				E2419FBB2187FDB300641B7C /* UIView+Loading.m in Sources */,
 			);

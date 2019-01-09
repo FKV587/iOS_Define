@@ -12,15 +12,29 @@
 
 #pragma makr -- QMUINavigationControllerDelegate --
 - (BOOL)preferredNavigationBarHidden{
-    return YES;
+    return NO;
 }
 
 - (BOOL)shouldCustomizeNavigationBarTransitionIfHideable{
-    return NO;
+    return YES;
 }
 
 - (BOOL)forceEnableInteractivePopGestureRecognizer{
     return YES;
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleLightContent;
+}
+
+-(UIInterfaceOrientationMask)supportedInterfaceOrientations
+{
+    return UIInterfaceOrientationMaskPortrait;
+}
+
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
+{
+    return UIInterfaceOrientationPortrait;
 }
 
 @end
