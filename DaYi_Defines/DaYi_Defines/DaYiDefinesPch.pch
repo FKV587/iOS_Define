@@ -12,12 +12,12 @@
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 #import "DaYiDefines.h"
+#import <QMUIKit/QMUIKit.h>
 #import "UIColor+HexColor.h"
 #import "UIImage+GennerateColor.h"
 #import "UIView+Appearance.h"
 #import "UIButton+UIStyle.h"
 #import "UIView+Loading.h"
-#import <QMUIKit/QMUIKit.h>
 #import "UIViewController+UINavigationStyle.h"
 
 #endif /* DaYiDefinesPch_pch */
