@@ -11,7 +11,7 @@
 
 @implementation DYSavePHPhotoLibrary
 
-+ (void)saveImage:(UIImage *)image{
++ (void)saveImage:(UIImage *)image{ 
     [self saveImage:image assetCollectionName:@"建融信帮"];
 }
 
