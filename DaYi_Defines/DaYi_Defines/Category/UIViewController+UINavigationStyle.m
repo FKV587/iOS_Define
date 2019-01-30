@@ -11,6 +11,7 @@
 @implementation UIViewController (UINavigationStyle)
 
 #pragma makr -- QMUINavigationControllerDelegate --
+
 - (BOOL)preferredNavigationBarHidden{
     return NO;
 }
@@ -22,19 +23,32 @@
 - (BOOL)forceEnableInteractivePopGestureRecognizer{
     return YES;
 }
+#pragma makr -- statusBar颜色 --
 
 - (UIStatusBarStyle)preferredStatusBarStyle{
     return UIStatusBarStyleLightContent;
 }
 
--(UIInterfaceOrientationMask)supportedInterfaceOrientations
+/*
++ (void)load
 {
-    return UIInterfaceOrientationMaskPortrait;
+    [self method_replaceMethod:@selector(setEnabled:) swizMethod:@selector(setEnabledNew:)];
+    [self method_replaceMethod:@selector(setSelected:) swizMethod:@selector(setSelectedNew:)];
 }
 
-- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
++ (void)method_replaceMethod:(SEL)origSEL swizMethod:(SEL)swizSEL
 {
-    return UIInterfaceOrientationPortrait;
+    Method origMethod = class_getInstanceMethod(self, origSEL);
+    Method swizMethod = class_getInstanceMethod(self, swizSEL);
+    BOOL didAddMethod = class_addMethod(self, origSEL, method_getImplementation(swizMethod), method_getTypeEncoding(swizMethod));
+    if (didAddMethod) {
+        class_replaceMethod(self, swizSEL, method_getImplementation(origMethod), method_getTypeEncoding(origMethod));
+    } else {
+        //origMethod and swizMethod already exist
+        method_exchangeImplementations(origMethod, swizMethod);
+    }
 }
+*/
+
 
 @end

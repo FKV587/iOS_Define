@@ -31,7 +31,9 @@
             }
         }];
     } else {
-        [QMUITips showInfo:@"请在设置界面, 授权访问相册"];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [QMUITips showInfo:@"请在设置界面, 授权访问相册"];
+        });
     }
 }
 
@@ -71,11 +73,13 @@
         [collectionRequest addAssets:@[placeholder]];
     } completionHandler:^(BOOL success, NSError * _Nullable error) {
         // 3. 判断是否出错, 如果报错, 声明保存不成功
-        if (error) {
-            [QMUITips showError:@"保存失败"];
-        } else {
-            [QMUITips showSucceed:@"保存成功"];
-        }
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (error) {
+                [QMUITips showError:@"保存失败"];
+            } else {
+                [QMUITips showSucceed:@"保存成功"];
+            }
+        });
     }];
 }
 

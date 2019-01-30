@@ -25,4 +25,11 @@
 - (void)rightBorder:(UIColor *)color width:(CGFloat)width;
 
 - (void)hadowViewShadowOpacity:(CGFloat)shadowOpacity radius:(CGFloat)radius;
+
+- (void)hadowViewShadowOpacity:(float)shadowOpacity layerColor:(UIColor *)color  shadowOffset:(CGSize)shadowOffset;
+
+- (void)viewBorderLineStrokeViewBorderColor:(UIColor *)borderColor viewFrame:(CGRect)frame;
+//抖动动画
+- (void)shakeAnimationForView:(UIView *)view;
+
 @end

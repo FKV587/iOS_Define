@@ -71,17 +71,67 @@
 }
 
 + (NSString *)stringTimeYYMMDD:(NSDate *)date{
+    return [self stringTime:date dateFormat:@"YYYYMMDD"];
+}
+
++ (NSString *)stringTimeYY_MM_DD:(NSDate *)date{
     return [self stringTime:date dateFormat:@"YYYY-MM-DD"];
 }
 
++ (NSString *)stringTimeYY_MM:(NSDate *)date{
+    return [self stringTime:date dateFormat:@"YYYY-MM"];
+}
+
++ (NSString *)stringTimeDotYYMMDDHHmmss:(NSDate *)date{
+    return [self stringTime:date dateFormat:@"YYYY.MM.DD HH.mm.ss"];
+}
+
 + (NSString *)stringTime:(NSDate *)date dateFormat:(NSString *)format{
-    NSLog(@"当前时间NSDate类型 %@",date);
     
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat:format];
     NSString *curTime = [formatter stringFromDate:date];
-    NSLog(@"当前时间自定义格式1 %@",curTime);
     return curTime;
 }
+
+
+- (NSString *)handleSpaceAndEnterElementWithString
+{
+    NSString *realSre = [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    
+    NSString *realSre1 = [realSre stringByReplacingOccurrencesOfString:@"\r" withString:@""];
+    
+    NSString *realSre2 = [realSre1 stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+    
+    return realSre2;
+}
+
+- (NSString *)stringWithrReloType:(ROLEIDTYPE)relo{
+    switch (relo) {
+        case ROLEIDTYPE_WORKER:
+            return @"5pX68Rv2c7eU4MiSiZe";
+            break;
+        case ROLEIDTYPE_TEAMLEADER:
+            return @"sUgIgRg59csISVYbByH";
+            break;
+        case ROLEIDTYPE_SERVICESCOMPANY:
+            return @"x1Ba1qoEhfyP6S2qTvN";
+            break;
+        case ROLEIDTYPE_CONSTRUCTIONUNIT_TOTALPACKAGE:
+            return @"7Va1tNd94LBrr0CKvc1";
+            break;
+        case ROLEIDTYPE_CONSTRUCTIONUNIT_DEVELOPER:
+            return @"1HLcJSdvLFoUlld0voH";
+            break;
+        case ROLEIDTYPE_ADMINISTRATIVEUNIT:
+            return @"QSjnnNzSgk2MnoemiQ4";
+            break;
+
+        default:
+            break;
+    }
+    return @"";
+}
+
 
 @end

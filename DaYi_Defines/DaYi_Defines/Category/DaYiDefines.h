@@ -35,6 +35,8 @@ typedef void(^failHandler)(id error);
 
 #define DYMinPassWordLength 6
 #define DYMaxPassWordLength 18
+#define DYMaxSearchTextLength 20
+
 /*
  -----------------------颜色-----------------------
  */
@@ -48,6 +50,14 @@ typedef void(^failHandler)(id error);
 /*
  -----------------------默认图片-----------------------
  */
+#define myDotNumbers @"0123456789.\n"
+#define myNumbers @"0123456789\n"
+#define DYIPAChannel @"APPSTORE"
+#define JPUSHAPPKEY @"2bbfca18924af1ed8c010571"//极光推送的key
+#define JPUSHAPPUSERID @"notfionJpushid"//通知发送绑定别名
+#define JPUSHDELETEUSERID @"deletenotfiinjpushid"//清楚绑定的别名
+
+#define BAIDUMAPKEY @"uREAf649bOzkRl24uzuk94GLzSrlbe2c"//百度地图
 
 #define DEFAULTIMAGE [UIImage imageNamed:@"default_noimg"]
 #define INLETTYPE @"C"
@@ -58,7 +68,7 @@ typedef void(^failHandler)(id error);
 #define SUCCESS @"DaYi_success"
 #define FAIL @"DaYi_fail"
 #define AUTHORIZATION @"DaYi_authorization"
-
+#define DYREFRESHWORKBENCH @"DYREFRESHWORKBENCH"
 
 typedef enum : int {
     ROLEIDTYPE_WORKER = 1,   //工人
@@ -69,3 +79,39 @@ typedef enum : int {
     ROLEIDTYPE_ADMINISTRATIVEUNIT,   //行政单位
 } ROLEIDTYPE;
 
+
+typedef enum : int {
+    DYTASKDETAILTYPE_MYPLAN = 1,//待审批的
+    DYTASKDETAILTYPE_DOING,//我负责的
+    DYTASKDETAILTYPE_MYCREAT,//我创建的
+    DYTASKDETAILTYPE_HISTORY,//巡检记录 历史计划
+    DYTASKDETAILTYPE_RECT,//我整改的
+    DYTASKDETAILTYPE_LOOKLOOK,//只能看不能操作
+    DYTASKDETAILTYPE_ALREADY,//已处理
+} DYTASKDETAILTYPE;
+
+typedef enum : int {
+    DYPLATFORMDETAILTYPE_QUALITY = 1,//质量
+    DYPLATFORMDETAILTYPE_SECTITY,//安全
+    DYPLATFORMDETAILTYPE_BUSINESS,//商务认证
+    DYPLATFORMDETAILTYPE_TASK,//任务
+    DYPLATFORMDETAILTYPE_CONTRACT,//合同
+    DYPLATFORMDETAILTYPE_BADRECORD,//实名管理
+    DYPLATFORMDETAILTYPE_VIDEO,//视频监控
+    DYPLATFORMDETAILTYPE_EDUCATION,//三级教育
+    DYPLATFORMDETAILTYPE_DISPUTES,//纠纷
+    DYPLATFORMDETAILTYPE_SIGN,//考勤
+    DYPLATFORMDETAILTYPE_ADDRESSBOOK,//通讯录
+    DYPLATFORMDETAILTYPE_ZHAOGONG,//招工
+} DYPLATFORMDETAILTYPE;
+
+// 箭头的位置
+typedef enum : int {
+    AddressBookFoldingSectionHeaderArrowPositionLeft,
+    AddressBookFoldingSectionHeaderArrowPositionRight,
+} AddressBookFoldingSectionHeaderArrowPosition;
+
+typedef enum : int {
+    ViewControllerNavigationBarType_Normal,
+    ViewControllerNavigationBarType_Search,
+} ViewControllerNavigationBarType;
