@@ -32,10 +32,10 @@
     
     QMUICMI.linkColor = UIColorMake(56, 116, 171);                              // UIColorLink : 文字链接颜色
     QMUICMI.disabledColor = UIColorGray;                                        // UIColorDisabled : 全局 disabled 的颜色，一般用于 UIControl 等控件
-    QMUICMI.backgroundColor = [UIColor colorWithHex:0xf5f5f9];                                              // UIColorForBackground : 界面背景色，默认用于 QMUICommonViewController.view 的背景色
+    QMUICMI.backgroundColor = [UIColor colorWithHex:0xf0f0f5];                                              // UIColorForBackground : 界面背景色，默认用于 QMUICommonViewController.view 的背景色
     QMUICMI.maskDarkColor = UIColorMakeWithRGBA(0, 0, 0, .35f);                 // UIColorMask : 深色的背景遮罩，默认用于 QMAlertController、QMUIDialogViewController 等弹出控件的遮罩
     QMUICMI.maskLightColor = UIColorMakeWithRGBA(255, 255, 255, .5f);           // UIColorMaskWhite : 浅色的背景遮罩，QMUIKit 里默认没用到，只是占个位
-    QMUICMI.separatorColor = [UIColor colorWithHex:0xf0f0f5];                        // UIColorSeparator : 全局默认的分割线颜色，默认用于列表分隔线颜色、UIView (QMUI_Border) 分隔线颜色
+    QMUICMI.separatorColor = [UIColor colorWithHex:0xdddddd];                        // UIColorSeparator : 全局默认的分割线颜色，默认用于列表分隔线颜色、UIView (QMUI_Border) 分隔线颜色
     QMUICMI.separatorDashedColor = UIColorMake(17, 17, 17);                     // UIColorSeparatorDashed : 全局默认的虚线分隔线的颜色，默认 QMUIKit 暂时没用到
     QMUICMI.placeholderColor = UIColorMake(196, 200, 208);                      // UIColorPlaceholder，全局的输入框的 placeholder 颜色，默认用于 QMUITextField、QMUITextView，不影响系统 UIKit 的输入框
     
@@ -99,11 +99,11 @@
     
     QMUICMI.tabBarBackgroundImage = nil;                                        // TabBarBackgroundImage : UITabBar 的背景图
     QMUICMI.tabBarBarTintColor = nil;                                           // TabBarBarTintColor : UITabBar 的 barTintColor
-    QMUICMI.tabBarShadowImageColor = nil;                                       // TabBarShadowImageColor : UITabBar 的 shadowImage 的颜色，会自动创建一张 1px 高的图片
-    QMUICMI.tabBarTintColor = nil;                                              // TabBarTintColor : UITabBar 的 tintColor
+    QMUICMI.tabBarShadowImageColor = [UIColor colorWithHex:0xdddddd];                                       // TabBarShadowImageColor : UITabBar 的 shadowImage 的颜色，会自动创建一张 1px 高的图片
+    QMUICMI.tabBarTintColor = [UIColor colorWithHex:0x2e9ef5];                                              // TabBarTintColor : UITabBar 的 tintColor
     QMUICMI.tabBarItemTitleColor = nil;                                         // TabBarItemTitleColor : 未选中的 UITabBarItem 的标题颜色
     QMUICMI.tabBarItemTitleColorSelected = TabBarTintColor;                     // TabBarItemTitleColorSelected : 选中的 UITabBarItem 的标题颜色
-    QMUICMI.tabBarItemTitleFont = nil;                                          // TabBarItemTitleFont : UITabBarItem 的标题字体
+    QMUICMI.tabBarItemTitleFont = UIFontMake(11);                                          // TabBarItemTitleFont : UITabBarItem 的标题字体
     
     #pragma mark - Toolbar
     
@@ -135,8 +135,8 @@
     
     QMUICMI.tableViewEstimatedHeightEnabled = YES;                              // TableViewEstimatedHeightEnabled : 是否要开启全局 UITableView 的 estimatedRow(Section/Footer)Height
     
-    QMUICMI.tableViewBackgroundColor = [UIColor colorWithHex:0xf5f5f9];                                     // TableViewBackgroundColor : Plain 类型的 QMUITableView 的背景色颜色
-    QMUICMI.tableViewGroupedBackgroundColor = [UIColor colorWithHex:0xf5f5f9];                              // TableViewGroupedBackgroundColor : Grouped 类型的 QMUITableView 的背景色
+    QMUICMI.tableViewBackgroundColor = [UIColor colorWithHex:0xf0f0f5];                                     // TableViewBackgroundColor : Plain 类型的 QMUITableView 的背景色颜色
+    QMUICMI.tableViewGroupedBackgroundColor = [UIColor colorWithHex:0xf0f0f5];                              // TableViewGroupedBackgroundColor : Grouped 类型的 QMUITableView 的背景色
     QMUICMI.tableSectionIndexColor = nil;                                       // TableSectionIndexColor : 列表右边的字母索引条的文字颜色
     QMUICMI.tableSectionIndexBackgroundColor = nil;                             // TableSectionIndexBackgroundColor : 列表右边的字母索引条的背景色
     QMUICMI.tableSectionIndexTrackingBackgroundColor = nil;                     // TableSectionIndexTrackingBackgroundColor : 列表右边的字母索引条在选中时的背景色

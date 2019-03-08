@@ -19,6 +19,14 @@ NS_ASSUME_NONNULL_BEGIN
  cancle 取消的事件
  */
 - (void)showNewAlertControllertitle:(NSString *)title alert:(DaYiBlock)alertTure cancle:(DaYiBlock)cancleAlert;
+
+/**
+ 提示
+
+ @param title 标题
+ @param alertTure 回调
+ */
+- (void)showNewSureAlertControllertitle:(NSString *)title alert:(DaYiBlock)alertTure;
 - (void)showNewAlertControllertitle:(NSString *)title cancleTitle:(NSString *)cancleTitle sureTitle:(NSString *)sureTitle alert:(DaYiBlock)alertTure cancle:(DaYiBlock)cancleAlert;
 
 @end

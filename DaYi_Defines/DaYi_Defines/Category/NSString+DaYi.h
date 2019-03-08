@@ -42,6 +42,21 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (CGSize)computationsTextTitlewith:(NSString *)title titleFont:(float)font widthSize:(float)width;
 
+
+/**
+ 获取多少号
+ */
++ (NSString *)stringTimeDay:(NSDate *)date;
+
+/**
+ 获取多少月
+ */
++ (NSString *)stringTimeMonth:(NSDate *)date;
+
+/**
+ 获取多少年
+ */
++ (NSString *)stringTimeYear:(NSDate *)date;
 /**
  返回格式化后的时间
  19900101
@@ -49,6 +64,12 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (NSString *)stringTimeYYMMDD:(NSDate *)date;
 
+/**
+ 返回格式化后的时间
+ 1月1日
+ @param date 时间
+ */
++ (NSString *)stringTimeMMYDDR:(NSDate *)date;
 /**
  返回格式化后的时间
  1990-01-01
@@ -73,12 +94,28 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSString *)stringTime:(NSDate *)date dateFormat:(NSString *)format;
 
 /**
- 返回格式化后的时间 yyyy.MM.DD HH.mm.ss
+ 返回格式化后的时间 yyyy.MM.DD HH:mm:ss
  
  @param date 时间
  */
 + (NSString *)stringTimeDotYYMMDDHHmmss:(NSDate *)date;
 
+
+/**
+ 根据格式返回时间NSdate
+
+ @param time 2019-09-09
+ @return date
+ */
++ (NSDate *)dateTimeYY_MM_DD:(NSString *)time;
+
+/**
+ 根据格式返回时间NSdate
+ 
+ @param time 2019-09-
+ @return date
+ */
++ (NSDate *)dateTimeYY_MM:(NSString *)time;
 /**
  去掉这个字符串的空格和换行
 

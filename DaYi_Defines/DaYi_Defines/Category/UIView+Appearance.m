@@ -64,7 +64,20 @@
 
 - (void)hadowViewShadowOpacity:(CGFloat)shadowOpacity radius:(CGFloat)radius
 {
-    self.layer.shadowColor = [UIColor colorWithHex:0x000000 alpha:0.5].CGColor;
+    [self hadowViewShadowOpacity:shadowOpacity radius:radius borderColor:UIColorWhite shadowColor:UIColorGrayLighten];
+}
+
+- (void)hadowViewShadowOpacity:(CGFloat)shadowOpacity radius:(CGFloat)radius color:(UIColor *)color
+{
+    [self hadowViewShadowOpacity:shadowOpacity radius:radius borderColor:color shadowColor:color];
+}
+
+- (void)hadowViewShadowOpacity:(CGFloat)shadowOpacity radius:(CGFloat)radius borderColor:(UIColor *)borderColor shadowColor:(UIColor *)shadowColor
+{
+    self.layer.cornerRadius = radius;
+    self.layer.borderWidth = 0.5f;
+    self.layer.borderColor = borderColor.CGColor;
+    self.layer.shadowColor = shadowColor.CGColor;
     self.layer.shadowRadius = radius;
     self.layer.shadowOpacity = shadowOpacity;
     self.layer.shadowOffset = CGSizeMake(2,5);
@@ -91,9 +104,9 @@
     [self.layer addSublayer:border];
 }
 
-- (void)shakeAnimationForView:(UIView *)view{
+- (void)showShakeAnimation{
     // 获取到当前的View
-    CALayer *viewLayer = view.layer;
+    CALayer *viewLayer = self.layer;
     // 获取当前View的位置
     CGPoint position = viewLayer.position;
     // 移动的两个终点位置

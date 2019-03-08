@@ -40,9 +40,9 @@ static char * UISTYLETYPE = "UISTYLETYPE";
     [self setTitleColor:[UIColor colorWithHex:0xffffff alpha:1] forState:UIControlStateNormal];
     [self setTitleColor:[UIColor colorWithHex:0xffffff alpha:0.6] forState:UIControlStateHighlighted];
     [self setTitleColor:[UIColor colorWithHex:0xffffff alpha:0.3] forState:UIControlStateDisabled];
-    [self setBackgroundImage:[UIImage squareResizingModeStretchImageWithColor:[UIColor colorWithHex:0x2e9ef5]] forState:UIControlStateNormal];
+    [self setBackgroundImage:[UIImage squareResizingModeStretchImageWithColor:[UIColor colorWithHex:0x1f96fa]] forState:UIControlStateNormal];
     [self setBackgroundImage:[UIImage squareResizingModeStretchImageWithColor:[UIColor colorWithHex:0x298edc]] forState:UIControlStateHighlighted];
-    [self setBackgroundImage:[UIImage squareResizingModeStretchImageWithColor:[UIColor colorWithHex:0x2e9ef5 alpha:0.6]] forState:UIControlStateDisabled];
+    [self setBackgroundImage:[UIImage squareResizingModeStretchImageWithColor:[UIColor colorWithHex:0x1f96fa alpha:0.6]] forState:UIControlStateDisabled];
     self.contentEdgeInsets = UIEdgeInsetsMake(9, 9, 9, 9);
 }
 
@@ -64,16 +64,16 @@ static char * UISTYLETYPE = "UISTYLETYPE";
     [self setTitleColor:[UIColor colorWithHex:0xffffff alpha:1] forState:UIControlStateNormal];
     [self setTitleColor:[UIColor colorWithHex:0xffffff alpha:0.6] forState:UIControlStateHighlighted];
     [self setTitleColor:[UIColor colorWithHex:0xffffff alpha:0.3] forState:UIControlStateDisabled];
-    [self setBackgroundImage:[UIImage squareResizingModeStretchImageWithColor:[UIColor colorWithHex:0x2e9ef5]] forState:UIControlStateNormal];
+    [self setBackgroundImage:[UIImage squareResizingModeStretchImageWithColor:[UIColor colorWithHex:0x1f96fa]] forState:UIControlStateNormal];
     [self setBackgroundImage:[UIImage squareResizingModeStretchImageWithColor:[UIColor colorWithHex:0x298edc]] forState:UIControlStateHighlighted];
-    [self setBackgroundImage:[UIImage squareResizingModeStretchImageWithColor:[UIColor colorWithHex:0x2e9ef5 alpha:0.6]] forState:UIControlStateDisabled];
+    [self setBackgroundImage:[UIImage squareResizingModeStretchImageWithColor:[UIColor colorWithHex:0x1f96fa alpha:0.6]] forState:UIControlStateDisabled];
     self.contentEdgeInsets = UIEdgeInsetsMake(9, 9, 9, 9);
 }
 
 - (void)inButtonStyleTwo
 {
     [self roundCorner:3.0];
-    [self setTitleColor:[UIColor colorWithHex:0x2e9ef5 alpha:1] forState:UIControlStateNormal];
+    [self setTitleColor:[UIColor colorWithHex:0x1f96fa alpha:1] forState:UIControlStateNormal];
     [self setTitleColor:[UIColor colorWithHex:0xffffff alpha:0.6] forState:UIControlStateHighlighted];
     [self setTitleColor:[UIColor colorWithHex:0xffffff alpha:0.2] forState:UIControlStateDisabled];
     [self setBackgroundImage:[UIImage squareResizingModeStretchImageWithColor:[UIColor colorWithHex:0xffffff]] forState:UIControlStateNormal];
@@ -131,7 +131,7 @@ static char * UISTYLETYPE = "UISTYLETYPE";
             break;
         case UIButtonUIStyle_TWO:
             [self inButtonStyleTwo];
-            [self border:[UIColor colorWithHex:0x2E9EF5] width:1];
+            [self border:[UIColor colorWithHex:0x1f96fa] width:1];
             break;
         case UIButtonUIStyle_THREE:
             [self inButtonStyleThree];
@@ -187,7 +187,7 @@ static char * UISTYLETYPE = "UISTYLETYPE";
     }else{
         switch (self.uiStyle) {
             case UIButtonUIStyle_TWO:
-                [self border:[UIColor colorWithHex:0x2E9EF5] width:1];
+                [self border:[UIColor colorWithHex:0x1f96fa] width:1];
                 break;
                 
             default:

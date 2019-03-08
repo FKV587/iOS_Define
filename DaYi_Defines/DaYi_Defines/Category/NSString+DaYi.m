@@ -70,30 +70,59 @@
     return titleSize;
 }
 
++ (NSString *)stringTimeYear:(NSDate *)date{
+    return [self stringTime:date dateFormat:@"yyyy"];
+}
+
++ (NSString *)stringTimeMonth:(NSDate *)date{
+    return [self stringTime:date dateFormat:@"M"];
+}
+
++ (NSString *)stringTimeDay:(NSDate *)date{
+    return [self stringTime:date dateFormat:@"d"];
+}
+
 + (NSString *)stringTimeYYMMDD:(NSDate *)date{
-    return [self stringTime:date dateFormat:@"YYYYMMDD"];
+    return [self stringTime:date dateFormat:@"yyyyMMdd"];
+}
+
++ (NSString *)stringTimeMMYDDR:(NSDate *)date{
+    return [self stringTime:date dateFormat:@"M月d日"];
 }
 
 + (NSString *)stringTimeYY_MM_DD:(NSDate *)date{
-    return [self stringTime:date dateFormat:@"YYYY-MM-DD"];
+    return [self stringTime:date dateFormat:@"yyyy-MM-dd"];
 }
 
 + (NSString *)stringTimeYY_MM:(NSDate *)date{
-    return [self stringTime:date dateFormat:@"YYYY-MM"];
+    return [self stringTime:date dateFormat:@"yyyy-MM"];
 }
 
 + (NSString *)stringTimeDotYYMMDDHHmmss:(NSDate *)date{
-    return [self stringTime:date dateFormat:@"YYYY.MM.DD HH.mm.ss"];
+    return [self stringTime:date dateFormat:@"yyyy.MM.dd HH:mm:ss"];
 }
 
 + (NSString *)stringTime:(NSDate *)date dateFormat:(NSString *)format{
-    
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat:format];
     NSString *curTime = [formatter stringFromDate:date];
     return curTime;
 }
 
++ (NSDate *)dateTimeYY_MM_DD:(NSString *)time{
+    return [self dateTimeString:time dateFormat:@"yyyy-MM-dd"];
+}
+
++ (NSDate *)dateTimeYY_MM:(NSString *)time{
+    return [self dateTimeString:time dateFormat:@"yyyy-MM"];
+}
+
++ (NSDate *)dateTimeString:(NSString *)time dateFormat:(NSString *)format{
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:format];
+    NSDate * curTimeDate = [formatter dateFromString:time];
+    return curTimeDate;
+}
 
 - (NSString *)handleSpaceAndEnterElementWithString
 {
@@ -132,6 +161,5 @@
     }
     return @"";
 }
-
 
 @end
