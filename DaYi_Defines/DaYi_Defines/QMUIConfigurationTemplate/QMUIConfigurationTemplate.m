@@ -28,7 +28,7 @@
     QMUICMI.redColor = [UIColor colorWithHex:0xf96268];                                // UIColorRed : 红色
     QMUICMI.greenColor = [UIColor colorWithHex:0x09bb07];                            // UIColorGreen : 绿色
     QMUICMI.blueColor = [UIColor colorWithHex:0x1e96fa];                              // UIColorBlue : 蓝色
-    QMUICMI.yellowColor = UIColorMake(255, 207, 71);                            // UIColorYellow : 黄色
+    QMUICMI.yellowColor = [UIColor colorWithHex:0xf5a327];                            // UIColorYellow : 黄色
     
     QMUICMI.linkColor = UIColorMake(56, 116, 171);                              // UIColorLink : 文字链接颜色
     QMUICMI.disabledColor = UIColorGray;                                        // UIColorDisabled : 全局 disabled 的颜色，一般用于 UIControl 等控件
