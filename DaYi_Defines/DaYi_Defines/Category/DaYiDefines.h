@@ -26,6 +26,7 @@ typedef void(^ __nullable successHandler)(id data);
 typedef void(^ __nullable errorHandler)(id data);
 typedef void(^ __nullable failHandler)(id error);
 
+#define UIFontMediumMake(size) [UIFont systemFontOfSize:size weight:UIFontWeightMedium]
 
 #define DYACCOUNTMAXLENGTH 11
 #define MaxPickerSelectedImageCount 6
@@ -38,6 +39,7 @@ typedef void(^ __nullable failHandler)(id error);
 #define DYMaxSearchTextLength 20
 #define DYMaxSearchProjectTextLength 10
 
+//SafeAreaInsetsConstantForDeviceWithNotch.bottom
 /*
  -----------------------颜色-----------------------
  */
