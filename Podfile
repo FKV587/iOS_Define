@@ -8,7 +8,7 @@ use_frameworks!
 
 target 'DaYi_Defines' do
  pod 'MBProgressHUD', '~> 1.1.0'
- pod 'SDWebImage'
- pod 'QMUIKit'
+ pod 'SDWebImage', '~> 4.4.3'
+ pod 'QMUIKit', '~> 3.0.0'
 
 end

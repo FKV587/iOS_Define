@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "DaYi_Defines"
-  s.version      = "0.0.21"
+  s.version      = "0.0.22"
   s.summary      = "DaYi_Defines."
 
   # This description is used to generate tags and improve search results.
@@ -138,7 +138,7 @@ Pod::Spec.new do |s|
   # s.dependency "BLAPIManagers"
   # s.dependency "BLMediator"
     s.dependency "MBProgressHUD","~> 1.1.0"
-    s.dependency 'SDWebImage'
-    s.dependency 'QMUIKit'
+    s.dependency 'SDWebImage','~> 4.4.3'
+    s.dependency 'QMUIKit','~> 3.0.0'
     
 end
