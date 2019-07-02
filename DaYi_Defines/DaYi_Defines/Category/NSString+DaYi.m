@@ -102,6 +102,14 @@
     return [self stringTime:date dateFormat:@"yyyy.MM.dd HH:mm:ss"];
 }
 
++ (NSString *)stringTimeColonHHmmss:(NSDate *)date{
+    return [self stringTime:date dateFormat:@"HH:mm:ss"];
+}
+
++ (NSString *)stringTimeSlashYYMMDD:(NSDate *)date{
+    return [self stringTime:date dateFormat:@"yyyy/MM/dd"];
+}
+
 + (NSString *)stringTime:(NSDate *)date dateFormat:(NSString *)format{
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat:format];
@@ -115,6 +123,14 @@
 
 + (NSDate *)dateTimeYY_MM:(NSString *)time{
     return [self dateTimeString:time dateFormat:@"yyyy-MM"];
+}
+
++ (NSDate *)dateTimeYYYYMMDDHHmmss:(NSString *)time{
+    return [self dateTimeString:time dateFormat:@"YYYYMMDDHHmmss"];
+}
+
++ (NSDate *)dateTimeYYYYMMDD:(NSString *)time{
+    return [self dateTimeString:time dateFormat:@"yyyyMMdd"];
 }
 
 + (NSDate *)dateTimeString:(NSString *)time dateFormat:(NSString *)format{

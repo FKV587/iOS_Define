@@ -100,7 +100,19 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (NSString *)stringTimeDotYYMMDDHHmmss:(NSDate *)date;
 
+/**
+ 返回格式化后的时间HH:mm:ss
+ 
+ @param date 时间
+ */
++ (NSString *)stringTimeColonHHmmss:(NSDate *)date;
 
+/**
+ 返回格式化后的时间 yyyy/MM/dd
+ 
+ @param date 时间
+ */
++ (NSString *)stringTimeSlashYYMMDD:(NSDate *)date;
 /**
  根据格式返回时间NSdate
 
@@ -116,9 +128,23 @@ NS_ASSUME_NONNULL_BEGIN
  @return date
  */
 + (NSDate *)dateTimeYY_MM:(NSString *)time;
+
+/**
+ 根据格式返回时间NSdate
+ 
+ @param time 20190909111111
+ @return date
+ */
++ (NSDate *)dateTimeYYYYMMDDHHmmss:(NSString *)time;
+/**
+ 根据格式返回时间NSdate
+ 
+ @param time 20190909
+ @return date
+ */
++ (NSDate *)dateTimeYYYYMMDD:(NSString *)time;
 /**
  去掉这个字符串的空格和换行
-
  @return 字符串
  */
 - (NSString *)handleSpaceAndEnterElementWithString;

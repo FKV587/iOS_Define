@@ -20,11 +20,11 @@
 typedef void(^ __nullable DYRefesh)(void);
 typedef void(^ __nullable DaYiBlock)(void);
 typedef void(^ __nullable DaYiBOOLBlock)(BOOL status);
-typedef void(^ __nullable DaYiBlock1)(id data);
+typedef void(^ __nullable DaYiBlock1)(id _Nullable data);
 
-typedef void(^ __nullable successHandler)(id data);
-typedef void(^ __nullable errorHandler)(id data);
-typedef void(^ __nullable failHandler)(id error);
+typedef void(^ __nullable successHandler)(id _Nullable data);
+typedef void(^ __nullable errorHandler)(id _Nullable data);
+typedef void(^ __nullable failHandler)(id _Nullable error);
 
 #define UIFontMediumMake(size) [UIFont systemFontOfSize:size weight:UIFontWeightMedium]
 
